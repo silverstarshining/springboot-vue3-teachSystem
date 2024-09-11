@@ -38,24 +38,56 @@
     },
     methods: {
         ...mapMutations([
-          'setStuName','setStuId','setStuGender','setStuMajor','setStuAge','setEnrollmentTime','setAcademic','setStuHeadshot','setIsLogin'
+          'setStuName','setStuId','setStuGender','setStuMajor','setStuAge','setStuEnrollmentTime','setStuAcademic','setStuCurrent_home_address',
+          'setStuFaculties','setStuID_Number','setStuZipCode','setStu_phoneNumber','setStu_homePhone',
+          'setStuHeadshot','setIsLogin'
         ]),
+
         //加载信息
         getStuInfo() {
-          // this.getStuHeadShot();
+          this.$http.get('/stu/getStuInfo')
+         .then(res => {
+            if(res.data.code === '200'){
+              this.setStuName(res.data.data.name);
+              this.setStuId(res.data.data.user_name);
+              this.setStuGender(res.data.data.gender);
+              this.setStuMajor(res.data.data.user_major);
+              this.setStuAge(new Date().getFullYear() - new Date(res.data.data.birthDay).getFullYear());
+              this.setStuEnrollmentTime(new Date(res.data.data.enrollment_dates));
+              this.setStuAcademic(res.data.data.academic);
+              this.setStuCurrent_home_address(res.data.data.current_home_address);
+              this.setStuFaculties(res.data.data.faculties);
+              this.setStuID_Number(res.data.data.id_number);
+              this.setStuZipCode(res.data.data.zipCode);
+              this.setStu_phoneNumber(res.data.data.user_phoneNumber);
+              this.setStu_homePhone(res.data.data.home_phone);
+            }else{
+              console.log(res.data.msg);
+              console.log("获取学生信息失败");
+            }
+          })
+         .catch(err => {
+            console.log(err);
+          });
+
+          this.getStuHeadShot();
           this.setIsLogin(true);
         },
+
         //加载头像
         getStuHeadShot(username) {
-          this.$http.post('/user/getStuHeadShot',username,{responseType: 'blob'})
+          username = "2207020527";
+          this.$http.post('/user/getUserHeadshot',username,{responseType: 'blob'})
          .then(res => {
-            console.log(res.data);
-            // this.setStuHeadshot(window.URL.createObjectURL(res.data));
+            var url = window.URL.createObjectURL(res.data);
+            this.setStuHeadshot(url);
+            console.log(url);
          })
          .catch(err => {
             console.log(err);
           });
         },
+
         //登录
         login() {
             if(this.loginForm.username === '' || this.loginForm.password === ''){
@@ -66,7 +98,6 @@
            .then(res => {
                 if(res.data.code === '200'){
                   //鉴权
-                  console.log(res.data.data.token);
                   localStorage.setItem('lv-Token',res.data.data.token);
                   this.$message.success('登录成功');
                   this.getStuInfo();
@@ -80,7 +111,6 @@
                 console.log(err);
             });
         },
-
 
         /*自动鉴权登录*/
         autoLogin() {

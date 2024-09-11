@@ -4,8 +4,8 @@
       <div class="block1">
           <img src="../assets/myInfo.png" alt="个人信息图">
           <div class="block1-text">
-            <p>姓名：{{ $store.state.studentName }}</p>
-            <p>学号：{{ $store.state.studentId }}</p>
+            <p>姓名：{{ $store.state.stuName }}</p>
+            <p>学号：{{ $store.state.stuId }}</p>
           </div>
           <div class="block1-title">个人信息</div>
           <div class="img-code"><img src="../assets/app.png" alt="code"></div>

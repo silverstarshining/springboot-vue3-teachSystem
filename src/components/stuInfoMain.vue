@@ -4,7 +4,7 @@
               <div class="info-container">
                 <h2 class="button-title">个人信息</h2>
                 <div class="headshot-container" @click="centerDialogVisible = true">
-                  <img :src="this.$store.state.studentHeadshot" alt="学生头像" class="headshot">
+                  <img :src="$store.state.stuHeadshot" alt="学生头像" class="headshot">
                 </div>
                 <div class="headshot-dialog">
                   <el-dialog v-model="centerDialogVisible" title="修改头像"  center="true">
@@ -45,8 +45,8 @@
                     <i :class="['iconfont', isShowChangeInfo ? 'icon-up-line-free' : 'icon-down-line-free']"></i>
                   </button>
                   <div class="info_input_container" ref="info_input_container">
-                    <input type="text" disabled :placeholder=$store.state.studentId />
-                    <input type="text" :placeholder=$store.state.studentName :model='this.changeInfoForm.name' />
+                    <input type="text" disabled :placeholder=$store.state.stuId />
+                    <input type="text" :placeholder=$store.state.stuName :model='this.changeInfoForm.name' />
                     <input type="password" placeholder='请输入想要修改的密码' :model='this.changeInfoForm.password' />
                     <input type="password" placeholder='请再次输入密码' :model='this.repeatPassword' />
                   </div>

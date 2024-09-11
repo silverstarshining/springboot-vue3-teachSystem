@@ -1,21 +1,21 @@
 <template>
     <div class="student-status-information">
-      <el-descriptions direction="vertical" :column="4" :size="size" border >
-        <el-descriptions-item label="学号">kooriookami</el-descriptions-item>
-        <el-descriptions-item label="电话号">19506167976</el-descriptions-item>
-        <el-descriptions-item label="院系" :span="2">青岛软件学院，计算机科学与技术学院</el-descriptions-item>
-        <el-descriptions-item label="专业">
-          <span>软件工程</span>
+      <el-descriptions direction="vertical" :column="5" border >
+        <el-descriptions-item :rowspan="4" :width="140" label="Photo" align="center">
+            <el-image style="width: 100px; height: 100px" src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"/>
         </el-descriptions-item>
-
-        <el-descriptions-item label="出生日期">
-          <span>2000-01-01</span>
-        </el-descriptions-item>
-        <el-descriptions-item label="入学日期"> 2020-09-01 </el-descriptions-item>
-        <el-descriptions-item label="家庭现住址"> 青岛市市南区 </el-descriptions-item>
-        <el-descriptions-item label="家庭电话"> 19506167976 </el-descriptions-item>
-        <el-descriptions-item label="身份证编号"> 42010219900101001X </el-descriptions-item>
-        <el-descriptions-item label="民族"> 42010219900101001X </el-descriptions-item>
+        <el-descriptions-item label="学号">{{ $store.state.stuId }}</el-descriptions-item>
+        <el-descriptions-item label="姓名">{{ $store.state.stuName }}</el-descriptions-item>
+        <el-descriptions-item label="院系" :span="2">{{ $store.state.stuFaculties }}</el-descriptions-item>
+        <el-descriptions-item label="专业">{{ $store.state.stuMajor }}</el-descriptions-item>
+        <el-descriptions-item label="年龄">{{ $store.state.stuAge }}</el-descriptions-item>
+        <el-descriptions-item label="性别">{{ $store.state.stuGender }}</el-descriptions-item>
+        <el-descriptions-item label="电话号">{{ $store.state.stu_phoneNumber }}</el-descriptions-item>
+        <el-descriptions-item label="入学日期">{{ $store.state.stuEnrollmentTime }}</el-descriptions-item>
+        <el-descriptions-item label="身份证编号">{{ $store.state.stuID_Number }}</el-descriptions-item>
+        <el-descriptions-item label="家庭电话">{{ $store.state.stu_homePhone }}</el-descriptions-item>
+        <el-descriptions-item label="邮编">{{ $store.state.stuZipCode }}</el-descriptions-item>
+        <el-descriptions-item label="家庭现住址" :colspan="4">{{ $store.state.stuCurrent_home_address }}</el-descriptions-item>
       </el-descriptions>
     </div>
 </template>
