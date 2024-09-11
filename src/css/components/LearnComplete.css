@@ -1,0 +1,35 @@
+.LearnComplete {
+    margin:0;
+    padding:0;
+    height:80%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+}
+
+.LearnComplete-echarts-container{
+    height: 10%;
+    margin-bottom: 5%;
+}
+
+.LearnComplete-all-score{
+    margin-top:50px;
+    height:100%;
+}
+
+
+
+.LearnComplete-main{
+    height: 60%;
+}
+
+.LearnComplete-title{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color:rgb(175, 180, 184);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

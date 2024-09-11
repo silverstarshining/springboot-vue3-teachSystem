@@ -1,0 +1,374 @@
+
+
+.MenuForm .blocks-container1{
+    margin-left:20%;
+    margin-right:20%;
+    display:flex;
+    clear:both;
+}
+
+.MenuForm .block1{
+    display:flex;
+    margin:3px;
+    background-color: #09619F;
+    width:265px;
+    height:287px;
+    color:white;
+}
+
+.MenuForm .block1 img{
+    position:absolute;
+    margin-top: 60px;
+    margin-left:20px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block1 .img-code{
+    position:absolute;
+    margin-top: 100px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block1-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 140px;
+    margin-left: 28px;
+    color:white;
+}
+
+.MenuForm .block1-text{
+    position:absolute;
+    font-size:13px;
+    margin-top: 80px;
+    margin-left: 120px;
+    color:white;
+}
+
+.MenuForm .block2-link{
+    margin:3px;
+    display:flex;
+    width:153px;
+    height:287px;
+    color:white;
+}
+
+.MenuForm .block2{
+    background-color: #4FB5C7;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block2 img{
+    position:absolute;
+    margin-top: 75px;
+    margin-left:40px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block2 .block2-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 160px;
+    margin-left: 50px;
+}
+
+.MenuForm .block3-link{
+    margin:3px;
+    display:flex;
+    width:173px;
+    height:141px;
+    color:white;
+}
+
+.MenuForm .block3{
+    background-color: #1978D8;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block3 img{
+    position:absolute;
+    margin-top: 40px;
+    margin-left: 36px;
+    width:92px;
+    height:55px;
+}
+
+.MenuForm .block3 .block3-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 105px;
+    margin-left: 43px;
+}
+
+.MenuForm .block4-link{
+    margin:3px;
+    display:flex;
+    width:173px;
+    height:141px;
+    color:white;
+}
+
+.MenuForm .block4{
+    background-color: #90A8E3;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block4 img{
+    position:absolute;
+    margin-top: 30px;
+    margin-left:45px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block4 .block4-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 112px;
+    margin-left: 58px;
+}
+
+.MenuForm .block5-link{
+    margin:3px;
+    display:flex;
+    width:304px;
+    height:141px;
+}
+
+.MenuForm .block5{
+    background-color: #DB6987;
+    width:100%;
+    height:100%;
+    color:white;
+}
+
+.MenuForm .block5 img{
+    position:absolute;
+    margin-top: 30px;
+    margin-left:30px;
+    width:80px;
+    height:57px;
+}
+
+.MenuForm .block5 .block5-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 105px;
+    margin-left: 40px;
+}
+
+.MenuForm .block6-link{
+    margin:3px;
+    display:flex;
+    width:304px;
+    height:141px;
+    color:white;
+}
+
+.MenuForm .block6{
+    background-color: #8E7AAA;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block6 img{
+    position:absolute;
+    margin-top: 25px;
+    margin-left:33px;
+    width:67px;
+    height:79px;
+}
+
+.MenuForm .block6 .block6-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+.MenuForm .blocks-container2{
+    display:flex;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+.MenuForm .block7-link{
+    margin:3px;
+    display:flex;
+    width:130px;
+    height:138px;
+    color:white;
+}
+
+.MenuForm .block7{
+    background-color: #177995;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block7 img{
+    position:absolute;
+    margin-top: 24px;
+    margin-left:25px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block7 .block7-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 110px;
+    margin-left: 28px;
+}
+
+.MenuForm .block8-link{
+    margin:3px;
+    display:flex;
+    width:130px;
+    height:138px;
+    color:white;
+}
+
+.MenuForm .block8{
+    background-color: #A0CF41;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block8 img{
+    position:absolute;
+    margin-top: 24px;
+    margin-left:30px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block8 .block8-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 110px;
+    margin-left: 40px;
+}
+
+.MenuForm .block9-link{
+    margin:3px;
+    display:flex;
+    width:153px;
+    height:138px;
+    color:white;
+}
+
+.MenuForm .block9{
+    background-color: #EAAF76;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block9 img{
+    position:absolute;
+    margin-top: 30px;
+    margin-left:38px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block9 .block9-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 110px;
+    margin-left: 48px;
+}
+
+.MenuForm .block10-link{
+    margin:3px;
+    display:flex;
+    width:173px;
+    height:138px;
+    color:white;
+}
+
+.MenuForm .block10{
+    background-color: #88BAD9;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block10 img{
+    position:absolute;
+    margin-top: 25px;
+    margin-left:48px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block10 .block10-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 110px;
+    margin-left: 49px;
+}
+
+.MenuForm .block11-link{
+    margin:3px;
+    display:flex;
+    width:149px;
+    height:138px;
+    color:white;
+}
+
+.MenuForm .block11{
+    background-color: #B69CCC;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block11 img{
+    position:absolute;
+    margin-top: 30px;
+    margin-left:40px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block11 .block11-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 110px;
+    margin-left: 50px;
+}
+
+.MenuForm .block12-link{
+    margin:3px;
+    display:flex;
+    width:149px;
+    height:138px;
+    color:white;
+}
+
+.MenuForm .block12{
+    background-color: #09619F;
+    width:100%;
+    height:100%;
+}
+
+.MenuForm .block12 img{
+    position:absolute;
+    margin-top: 30px;
+    margin-left:38px;
+    width:75px;
+    height:75px;
+}
+
+.MenuForm .block12 .block12-title{
+    position:absolute;
+    font-size:13px;
+    margin-top: 110px;
+    margin-left: 50px;
+}
+

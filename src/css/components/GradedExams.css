@@ -1,0 +1,60 @@
+.GradedExams {
+  display: flex;
+  height: 85%;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  margin-right: 2%;
+}
+
+.GradedExams-search-score,.GradedExams-Exam{
+  display: flex;
+  flex-direction: column;
+}
+
+.GradedExams-header h3{
+  margin-left:7%;
+  text-align: left;
+}
+
+.GradedExams-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.GradedExams-main .GradedExams-main-left{
+  margin-left:5%;
+  text-align: left;
+}
+
+.GradedExams-main .GradedExams-main-right{
+  margin-right:5%; 
+  text-align: left;
+}
+
+.GradedExams-Exam .GradedExams-main .GradedExams-main-right{
+  margin-right:15%; 
+  text-align: left;
+}
+
+.GradedExams-main li{
+  list-style: none;
+}
+
+.GradedExams-main a{
+  color: #000000;
+  line-height: 2;
+  text-decoration: none;
+}
+
+.GradedExams-main a:hover{
+  color: orange;
+  text-decoration: underline;
+}
+
+.GradedExams-main i{
+  color: rgb(159, 159, 159);
+}
+
+

@@ -1,0 +1,13 @@
+.index .header{
+    display:block;
+}
+
+
+.index .main{
+    position:static;
+    display:block;
+    margin-top:60px;
+    width: 100%;
+    height:auto;
+    background-color: #FAFCFF;
+}

@@ -1,0 +1,27 @@
+.courseScore{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    height: 100%;
+    margin-right:2%;
+}
+
+.courseScore-head{
+    margin:0;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.courseScore-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left:1%;
+    margin-right:1%;
+}
+
+.courseScore-pagination{
+    margin-top:1%;
+
+}
