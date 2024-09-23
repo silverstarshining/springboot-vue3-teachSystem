@@ -44,7 +44,6 @@ public class UserServiceImpl implements UserService {
      */
     @Override
     public Message userLogin(User user) {
-        log.info("username:"+user.getUsername()+"   password:"+user.getPassword());
         try{
             if(userDao.login(user.getUsername(),user.getPassword())>0)
             {

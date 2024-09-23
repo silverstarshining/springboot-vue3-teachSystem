@@ -11,5 +11,5 @@ public interface UserDao {
     public int login(@Param("username") String username, @Param("password") String password);
 
     @Select("select headshot from user where user_name=#{username}")
-    String getUserHeadshot(@Param("username") String userName);
+    public String getUserHeadshot(@Param("username") String userName);
 }

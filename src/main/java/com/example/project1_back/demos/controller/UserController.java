@@ -8,10 +8,7 @@ import com.example.project1_back.demos.services.UserService;
 import com.example.project1_back.demos.utils.Message.Message;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
-
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @Slf4j
@@ -42,6 +39,13 @@ public class UserController {
         return JSON.toJSONString(message);
     }
 
+    /*
+     *函数功能：自动登录登录
+     * 输入参数：token
+     * 流程：
+     * 1.验证token是否正确
+     * 2.若正确，则登录，错误则返回失败
+     */
     @AuthToken
     @PostMapping("/autoLogin")
     public String autoLogin(@RequestBody String token) {
@@ -50,6 +54,13 @@ public class UserController {
         return JSON.toJSONString(message);
     }
 
+    /*
+     *函数功能：获取用户头像
+     * 输入参数：用户名
+     * 流程：
+     * 1.获取用户对应的头像路径
+     * 2.根据路径获取图片流数据
+     */
     @AuthToken
     @GetMapping(value = "/getUserHeadshot")
     public String getUserHeadshot(String userName, HttpServletResponse response) {
